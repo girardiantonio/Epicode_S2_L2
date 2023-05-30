@@ -77,10 +77,22 @@ if (blackFriday > 50) {
   Alla fine mostra il risultato in console.
 */
 
-let var1 = 20;
-let var2 = 45;
-let var3 = 59;
-console.log("da fare");
+let x = 20;
+let y = 59;
+let z = 45;
+if (x > y && y > z) {
+  console.log("Ordine dal più alto al più basso", x, y, z);
+} else if (x > z && z > y) {
+  console.log("Ordine dal più alto al più basso", x, z, y);
+} else if (y > x && x > z) {
+  console.log("Ordine dal più alto al più basso", y, x, z);
+} else if (y > x && x < z) {
+  console.log("Ordine dal più alto al più basso", y, z, x);
+} else if (z > x && x > y) {
+  console.log("Ordine dal più alto al più basso", z, x, y);
+} else {
+  console.log("Ordine dal più alto al più basso", z, y, x);
+}
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
