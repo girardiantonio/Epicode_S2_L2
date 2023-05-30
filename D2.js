@@ -36,7 +36,8 @@ if (e === 8 || f === 8) {
   console.log("Uno dei due numeri è uguale a 8");
 } else if (f + e === 8 || e + f === 8) {
   console.log("L'addizzione è uguale a 8");
-} else f - e === 8 || e - f === 8; {
+} else f - e === 8 || e - f === 8;
+{
   console.log("La sottrazione è uguale a 8");
 }
 
@@ -60,11 +61,14 @@ if (totalShoppingCart > 50) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
-let blackFriday = totalShoppingCart - (totalShoppingCart * 20/100);
+let blackFriday = totalShoppingCart - (totalShoppingCart * 20) / 100;
 if (blackFriday > 50) {
   console.log("La spedizione è gratuita, totale da pagare", blackFriday);
 } else {
-  console.log("La spedizione ha un costo fisso di 10, totale da pagare", blackFriday + 10);
+  console.log(
+    "La spedizione ha un costo fisso di 10, totale da pagare",
+    blackFriday + 10
+  );
 }
 
 /* ESERCIZIO 7
@@ -73,27 +77,27 @@ if (blackFriday > 50) {
   Alla fine mostra il risultato in console.
 */
 
-let var1 = 20
-let var2 = 45
-let var3 = 59
-
+let var1 = 20;
+let var2 = 45;
+let var3 = 59;
+console.log("da fare");
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-let num = 23
-console.log(typeof num)
+let num = 23;
+console.log(typeof num);
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-let pardis = 23
-if (pardis %2 == 0) {
-  console.log("Il numero è pari")
+let pardis = 23;
+if (pardis % 2 === 0) {
+  console.log("Il numero è pari");
 } else {
-  console.log("Il numero è dispari")
+  console.log("Il numero è dispari");
 }
 
 /* ESERCIZIO 10
@@ -108,7 +112,14 @@ if (pardis %2 == 0) {
     }
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let val = 7;
+if (val < 10 && val >= 5) {
+  console.log("Meno di 10");
+} else if (val < 5) {
+  console.log("meno di 5");
+} else {
+  console.log("Uguale a 10 o maggiore");
+}
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -119,43 +130,43 @@ const me = {
   lastName: "Doe",
   skills: ["javascript", "html", "css"],
 };
-me.city="Toronto"
-console.log("John",me, me.skills)
+me.city = "Toronto";
+console.log("John", me, me.skills);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-delete me.lastName
-console.log("John",me, me.skills)
+delete me.lastName;
+console.log("John", me, me.skills);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-delete me.skills.pop(2)
-console.log("John",me, me.skills)
+delete me.skills.pop(2);
+console.log("John", me, me.skills);
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-let numbers = []
-numbers.push (1)
-numbers.push (2)
-numbers.push (3)
-numbers.push (4)
-numbers.push (5)
-numbers.push (6)
-numbers.push (7)
-numbers.push (8)
-numbers.push (9)
-numbers.push (10)
-console.log(numbers)
+let numbers = [];
+numbers.push(1);
+numbers.push(2);
+numbers.push(3);
+numbers.push(4);
+numbers.push(5);
+numbers.push(6);
+numbers.push(7);
+numbers.push(8);
+numbers.push(9);
+numbers.push(10);
+console.log(numbers);
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-numbers.splice[numbers, 10, 100]
-console.log(numbers)
+numbers.splice(9, 1, 100);
+console.log(numbers);
